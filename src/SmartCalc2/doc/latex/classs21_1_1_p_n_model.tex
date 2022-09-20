@@ -1,0 +1,206 @@
+\hypertarget{classs21_1_1_p_n_model}{}\doxysection{s21\+::PNModel Class Reference}
+\label{classs21_1_1_p_n_model}\index{s21::PNModel@{s21::PNModel}}
+
+
+{\ttfamily \#include $<$model.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classs21_1_1_p_n_model_a970fe7b156eb6d8982a7a563ec7ab346}{PNModel}} ()
+\item 
+\mbox{\hyperlink{classs21_1_1_p_n_model_a617eba4746576fd1f6a6a0c398b9d273}{PNModel}} (std\+::string)
+\item 
+\mbox{\hyperlink{classs21_1_1_p_n_model_a1f051ac364db97930157bce5b23b0b08}{$\sim$\+PNModel}} ()
+\item 
+double \mbox{\hyperlink{classs21_1_1_p_n_model_aa35b554080afe85738e96e34d7c983d3}{Calculate\+Expressions}} (double x=0)
+\item 
+void \mbox{\hyperlink{classs21_1_1_p_n_model_a6955b320b180fc9976020cc5987c3af2}{Set\+Expressions}} (std\+::string)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classs21_1_1_p_n_model_a075d66092ad8d7f5c5e8c283a3998d96}{Translate\+Expressions}} ()
+\item 
+bool \mbox{\hyperlink{classs21_1_1_p_n_model_a7b0b65a9c7052229722bcc6c22aee4ab}{Check\+Regex}} ()
+\item 
+void \mbox{\hyperlink{classs21_1_1_p_n_model_a496287630deaf6249b2978ac1f5dc723}{Digit\+Operations}} (int \&index)
+\item 
+int \mbox{\hyperlink{classs21_1_1_p_n_model_aeba2127d3fa80c00ddcf48de5b4db969}{Priority\+Operations}} (std\+::string oper)
+\item 
+void \mbox{\hyperlink{classs21_1_1_p_n_model_a8ec08ac8a3917c732c1850c135500302}{Operator\+Operations}} (int \&index)
+\item 
+int \mbox{\hyperlink{classs21_1_1_p_n_model_a3bca41566b165e16b98214d1b90f0063}{Closing\+Bracket\+Operations}} ()
+\item 
+void \mbox{\hyperlink{classs21_1_1_p_n_model_a537f49f7744587d1f7f5b3c636662572}{Function\+Operations}} (int \&index)
+\item 
+void \mbox{\hyperlink{classs21_1_1_p_n_model_a9bbf9023a3f3df19c2c1df14962dfd74}{Push\+Operations}} ()
+\item 
+void \mbox{\hyperlink{classs21_1_1_p_n_model_ad6414de3c071dfbd4f27208f30697223}{Clear\+Data}} ()
+\item 
+bool \mbox{\hyperlink{classs21_1_1_p_n_model_af6f80323315dbccc50d6fe5127da33b8}{String\+Is\+Number}} (std\+::string)
+\item 
+void \mbox{\hyperlink{classs21_1_1_p_n_model_aba842360c417174f3889e0409799fa17}{Function\+Action}} (std\+::stack$<$ double $>$ \&number, std\+::string action)
+\item 
+void \mbox{\hyperlink{classs21_1_1_p_n_model_a0b8152a42397462dac6dc562af91a66b}{Operator\+Action}} (std\+::stack$<$ double $>$ \&number, std\+::string action)
+\item 
+void \mbox{\hyperlink{classs21_1_1_p_n_model_a701c692ac946c3463b5d43f2a5341bd6}{Choose\+Action}} (std\+::stack$<$ double $>$ \&number, std\+::string action)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{classs21_1_1_p_n_model_a453a585284bbe59bfa7b1aaa803308d5}{expresion}}
+\item 
+std\+::stack$<$ std\+::string $>$ \mbox{\hyperlink{classs21_1_1_p_n_model_aadb630dc483bcfbeb04375e421d1ef98}{operation}}
+\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classs21_1_1_p_n_model_ac3e6b74d3eb586d221b958b3be0e621e}{notation}}
+\item 
+\mbox{\hyperlink{structs21_1_1element}{element}} \mbox{\hyperlink{classs21_1_1_p_n_model_aba4aa3a43e99125735566231278bb756}{default\+\_\+element}} = \{0, 1, 1, 1, 1, 0\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classs21_1_1_p_n_model_a970fe7b156eb6d8982a7a563ec7ab346}\label{classs21_1_1_p_n_model_a970fe7b156eb6d8982a7a563ec7ab346}} 
+\index{s21::PNModel@{s21::PNModel}!PNModel@{PNModel}}
+\index{PNModel@{PNModel}!s21::PNModel@{s21::PNModel}}
+\doxysubsubsection{\texorpdfstring{PNModel()}{PNModel()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily s21\+::\+PNModel\+::\+PNModel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classs21_1_1_p_n_model_a617eba4746576fd1f6a6a0c398b9d273}\label{classs21_1_1_p_n_model_a617eba4746576fd1f6a6a0c398b9d273}} 
+\index{s21::PNModel@{s21::PNModel}!PNModel@{PNModel}}
+\index{PNModel@{PNModel}!s21::PNModel@{s21::PNModel}}
+\doxysubsubsection{\texorpdfstring{PNModel()}{PNModel()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily s21\+::\+PNModel\+::\+PNModel (\begin{DoxyParamCaption}\item[{std\+::string}]{expresion }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+\mbox{\Hypertarget{classs21_1_1_p_n_model_a1f051ac364db97930157bce5b23b0b08}\label{classs21_1_1_p_n_model_a1f051ac364db97930157bce5b23b0b08}} 
+\index{s21::PNModel@{s21::PNModel}!````~PNModel@{$\sim$PNModel}}
+\index{````~PNModel@{$\sim$PNModel}!s21::PNModel@{s21::PNModel}}
+\doxysubsubsection{\texorpdfstring{$\sim$PNModel()}{~PNModel()}}
+{\footnotesize\ttfamily s21\+::\+PNModel\+::$\sim$\+PNModel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classs21_1_1_p_n_model_aa35b554080afe85738e96e34d7c983d3}\label{classs21_1_1_p_n_model_aa35b554080afe85738e96e34d7c983d3}} 
+\index{s21::PNModel@{s21::PNModel}!CalculateExpressions@{CalculateExpressions}}
+\index{CalculateExpressions@{CalculateExpressions}!s21::PNModel@{s21::PNModel}}
+\doxysubsubsection{\texorpdfstring{CalculateExpressions()}{CalculateExpressions()}}
+{\footnotesize\ttfamily double s21\+::\+PNModel\+::\+Calculate\+Expressions (\begin{DoxyParamCaption}\item[{double}]{x = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classs21_1_1_p_n_model_a7b0b65a9c7052229722bcc6c22aee4ab}\label{classs21_1_1_p_n_model_a7b0b65a9c7052229722bcc6c22aee4ab}} 
+\index{s21::PNModel@{s21::PNModel}!CheckRegex@{CheckRegex}}
+\index{CheckRegex@{CheckRegex}!s21::PNModel@{s21::PNModel}}
+\doxysubsubsection{\texorpdfstring{CheckRegex()}{CheckRegex()}}
+{\footnotesize\ttfamily bool s21\+::\+PNModel\+::\+Check\+Regex (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classs21_1_1_p_n_model_a701c692ac946c3463b5d43f2a5341bd6}\label{classs21_1_1_p_n_model_a701c692ac946c3463b5d43f2a5341bd6}} 
+\index{s21::PNModel@{s21::PNModel}!ChooseAction@{ChooseAction}}
+\index{ChooseAction@{ChooseAction}!s21::PNModel@{s21::PNModel}}
+\doxysubsubsection{\texorpdfstring{ChooseAction()}{ChooseAction()}}
+{\footnotesize\ttfamily void s21\+::\+PNModel\+::\+Choose\+Action (\begin{DoxyParamCaption}\item[{std\+::stack$<$ double $>$ \&}]{number,  }\item[{std\+::string}]{action }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classs21_1_1_p_n_model_ad6414de3c071dfbd4f27208f30697223}\label{classs21_1_1_p_n_model_ad6414de3c071dfbd4f27208f30697223}} 
+\index{s21::PNModel@{s21::PNModel}!ClearData@{ClearData}}
+\index{ClearData@{ClearData}!s21::PNModel@{s21::PNModel}}
+\doxysubsubsection{\texorpdfstring{ClearData()}{ClearData()}}
+{\footnotesize\ttfamily void s21\+::\+PNModel\+::\+Clear\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classs21_1_1_p_n_model_a3bca41566b165e16b98214d1b90f0063}\label{classs21_1_1_p_n_model_a3bca41566b165e16b98214d1b90f0063}} 
+\index{s21::PNModel@{s21::PNModel}!ClosingBracketOperations@{ClosingBracketOperations}}
+\index{ClosingBracketOperations@{ClosingBracketOperations}!s21::PNModel@{s21::PNModel}}
+\doxysubsubsection{\texorpdfstring{ClosingBracketOperations()}{ClosingBracketOperations()}}
+{\footnotesize\ttfamily int s21\+::\+PNModel\+::\+Closing\+Bracket\+Operations (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classs21_1_1_p_n_model_a496287630deaf6249b2978ac1f5dc723}\label{classs21_1_1_p_n_model_a496287630deaf6249b2978ac1f5dc723}} 
+\index{s21::PNModel@{s21::PNModel}!DigitOperations@{DigitOperations}}
+\index{DigitOperations@{DigitOperations}!s21::PNModel@{s21::PNModel}}
+\doxysubsubsection{\texorpdfstring{DigitOperations()}{DigitOperations()}}
+{\footnotesize\ttfamily void s21\+::\+PNModel\+::\+Digit\+Operations (\begin{DoxyParamCaption}\item[{int \&}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classs21_1_1_p_n_model_aba842360c417174f3889e0409799fa17}\label{classs21_1_1_p_n_model_aba842360c417174f3889e0409799fa17}} 
+\index{s21::PNModel@{s21::PNModel}!FunctionAction@{FunctionAction}}
+\index{FunctionAction@{FunctionAction}!s21::PNModel@{s21::PNModel}}
+\doxysubsubsection{\texorpdfstring{FunctionAction()}{FunctionAction()}}
+{\footnotesize\ttfamily void s21\+::\+PNModel\+::\+Function\+Action (\begin{DoxyParamCaption}\item[{std\+::stack$<$ double $>$ \&}]{number,  }\item[{std\+::string}]{action }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classs21_1_1_p_n_model_a537f49f7744587d1f7f5b3c636662572}\label{classs21_1_1_p_n_model_a537f49f7744587d1f7f5b3c636662572}} 
+\index{s21::PNModel@{s21::PNModel}!FunctionOperations@{FunctionOperations}}
+\index{FunctionOperations@{FunctionOperations}!s21::PNModel@{s21::PNModel}}
+\doxysubsubsection{\texorpdfstring{FunctionOperations()}{FunctionOperations()}}
+{\footnotesize\ttfamily void s21\+::\+PNModel\+::\+Function\+Operations (\begin{DoxyParamCaption}\item[{int \&}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classs21_1_1_p_n_model_a0b8152a42397462dac6dc562af91a66b}\label{classs21_1_1_p_n_model_a0b8152a42397462dac6dc562af91a66b}} 
+\index{s21::PNModel@{s21::PNModel}!OperatorAction@{OperatorAction}}
+\index{OperatorAction@{OperatorAction}!s21::PNModel@{s21::PNModel}}
+\doxysubsubsection{\texorpdfstring{OperatorAction()}{OperatorAction()}}
+{\footnotesize\ttfamily void s21\+::\+PNModel\+::\+Operator\+Action (\begin{DoxyParamCaption}\item[{std\+::stack$<$ double $>$ \&}]{number,  }\item[{std\+::string}]{action }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classs21_1_1_p_n_model_a8ec08ac8a3917c732c1850c135500302}\label{classs21_1_1_p_n_model_a8ec08ac8a3917c732c1850c135500302}} 
+\index{s21::PNModel@{s21::PNModel}!OperatorOperations@{OperatorOperations}}
+\index{OperatorOperations@{OperatorOperations}!s21::PNModel@{s21::PNModel}}
+\doxysubsubsection{\texorpdfstring{OperatorOperations()}{OperatorOperations()}}
+{\footnotesize\ttfamily void s21\+::\+PNModel\+::\+Operator\+Operations (\begin{DoxyParamCaption}\item[{int \&}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classs21_1_1_p_n_model_aeba2127d3fa80c00ddcf48de5b4db969}\label{classs21_1_1_p_n_model_aeba2127d3fa80c00ddcf48de5b4db969}} 
+\index{s21::PNModel@{s21::PNModel}!PriorityOperations@{PriorityOperations}}
+\index{PriorityOperations@{PriorityOperations}!s21::PNModel@{s21::PNModel}}
+\doxysubsubsection{\texorpdfstring{PriorityOperations()}{PriorityOperations()}}
+{\footnotesize\ttfamily int s21\+::\+PNModel\+::\+Priority\+Operations (\begin{DoxyParamCaption}\item[{std\+::string}]{oper }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classs21_1_1_p_n_model_a9bbf9023a3f3df19c2c1df14962dfd74}\label{classs21_1_1_p_n_model_a9bbf9023a3f3df19c2c1df14962dfd74}} 
+\index{s21::PNModel@{s21::PNModel}!PushOperations@{PushOperations}}
+\index{PushOperations@{PushOperations}!s21::PNModel@{s21::PNModel}}
+\doxysubsubsection{\texorpdfstring{PushOperations()}{PushOperations()}}
+{\footnotesize\ttfamily void s21\+::\+PNModel\+::\+Push\+Operations (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classs21_1_1_p_n_model_a6955b320b180fc9976020cc5987c3af2}\label{classs21_1_1_p_n_model_a6955b320b180fc9976020cc5987c3af2}} 
+\index{s21::PNModel@{s21::PNModel}!SetExpressions@{SetExpressions}}
+\index{SetExpressions@{SetExpressions}!s21::PNModel@{s21::PNModel}}
+\doxysubsubsection{\texorpdfstring{SetExpressions()}{SetExpressions()}}
+{\footnotesize\ttfamily void s21\+::\+PNModel\+::\+Set\+Expressions (\begin{DoxyParamCaption}\item[{std\+::string}]{expresion }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classs21_1_1_p_n_model_af6f80323315dbccc50d6fe5127da33b8}\label{classs21_1_1_p_n_model_af6f80323315dbccc50d6fe5127da33b8}} 
+\index{s21::PNModel@{s21::PNModel}!StringIsNumber@{StringIsNumber}}
+\index{StringIsNumber@{StringIsNumber}!s21::PNModel@{s21::PNModel}}
+\doxysubsubsection{\texorpdfstring{StringIsNumber()}{StringIsNumber()}}
+{\footnotesize\ttfamily bool s21\+::\+PNModel\+::\+String\+Is\+Number (\begin{DoxyParamCaption}\item[{std\+::string}]{str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classs21_1_1_p_n_model_a075d66092ad8d7f5c5e8c283a3998d96}\label{classs21_1_1_p_n_model_a075d66092ad8d7f5c5e8c283a3998d96}} 
+\index{s21::PNModel@{s21::PNModel}!TranslateExpressions@{TranslateExpressions}}
+\index{TranslateExpressions@{TranslateExpressions}!s21::PNModel@{s21::PNModel}}
+\doxysubsubsection{\texorpdfstring{TranslateExpressions()}{TranslateExpressions()}}
+{\footnotesize\ttfamily void s21\+::\+PNModel\+::\+Translate\+Expressions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classs21_1_1_p_n_model_aba4aa3a43e99125735566231278bb756}\label{classs21_1_1_p_n_model_aba4aa3a43e99125735566231278bb756}} 
+\index{s21::PNModel@{s21::PNModel}!default\_element@{default\_element}}
+\index{default\_element@{default\_element}!s21::PNModel@{s21::PNModel}}
+\doxysubsubsection{\texorpdfstring{default\_element}{default\_element}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structs21_1_1element}{element}} s21\+::\+PNModel\+::default\+\_\+element = \{0, 1, 1, 1, 1, 0\}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classs21_1_1_p_n_model_a453a585284bbe59bfa7b1aaa803308d5}\label{classs21_1_1_p_n_model_a453a585284bbe59bfa7b1aaa803308d5}} 
+\index{s21::PNModel@{s21::PNModel}!expresion@{expresion}}
+\index{expresion@{expresion}!s21::PNModel@{s21::PNModel}}
+\doxysubsubsection{\texorpdfstring{expresion}{expresion}}
+{\footnotesize\ttfamily std\+::string s21\+::\+PNModel\+::expresion\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classs21_1_1_p_n_model_ac3e6b74d3eb586d221b958b3be0e621e}\label{classs21_1_1_p_n_model_ac3e6b74d3eb586d221b958b3be0e621e}} 
+\index{s21::PNModel@{s21::PNModel}!notation@{notation}}
+\index{notation@{notation}!s21::PNModel@{s21::PNModel}}
+\doxysubsubsection{\texorpdfstring{notation}{notation}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::string$>$ s21\+::\+PNModel\+::notation\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classs21_1_1_p_n_model_aadb630dc483bcfbeb04375e421d1ef98}\label{classs21_1_1_p_n_model_aadb630dc483bcfbeb04375e421d1ef98}} 
+\index{s21::PNModel@{s21::PNModel}!operation@{operation}}
+\index{operation@{operation}!s21::PNModel@{s21::PNModel}}
+\doxysubsubsection{\texorpdfstring{operation}{operation}}
+{\footnotesize\ttfamily std\+::stack$<$std\+::string$>$ s21\+::\+PNModel\+::operation\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/alvintha/projects/\+CPP3\+\_\+\+Smart\+Calc\+\_\+v2.\+0-\/0/src/\+Smart\+Calc2/\mbox{\hyperlink{model_8h}{model.\+h}}\item 
+/\+Users/alvintha/projects/\+CPP3\+\_\+\+Smart\+Calc\+\_\+v2.\+0-\/0/src/\+Smart\+Calc2/\mbox{\hyperlink{model_8cpp}{model.\+cpp}}\end{DoxyCompactItemize}

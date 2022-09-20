@@ -1,0 +1,105 @@
+\hypertarget{model_8h_source}{}\doxysection{/\+Users/alvintha/projects/\+CPP3\+\_\+\+Smart\+Calc\+\_\+v2.0-\/0/src/\+Smart\+Calc2/model.h}
+\mbox{\hyperlink{model_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef SRC\_S21SMARTCALC2\_MODEL\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define SRC\_S21SMARTCALC2\_MODEL\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <cmath>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <regex>}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <stack>}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespaces21}{s21}} \{}
+\DoxyCodeLine{12 \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\mbox{\hyperlink{structs21_1_1element}{element}} \{}
+\DoxyCodeLine{13     \textcolor{keywordtype}{bool} \mbox{\hyperlink{structs21_1_1element_a0a2ab486e816238c73b946de997b413a}{calc\_operator}};}
+\DoxyCodeLine{14     \textcolor{keywordtype}{bool} \mbox{\hyperlink{structs21_1_1element_a3a759de3ad7f698ff08ec40f4e869b9e}{unary\_funcs}};}
+\DoxyCodeLine{15     \textcolor{keywordtype}{bool} \mbox{\hyperlink{structs21_1_1element_adcb8d1933ce58228e9efcef8838653a3}{variable\_x}};}
+\DoxyCodeLine{16     \textcolor{keywordtype}{bool} \mbox{\hyperlink{structs21_1_1element_aa5064d2270d14e677d4ce3a2a27cd48f}{number}};}
+\DoxyCodeLine{17     \textcolor{keywordtype}{bool} \mbox{\hyperlink{structs21_1_1element_a58ac1699e338be103075461d12110732}{open\_bracket}};}
+\DoxyCodeLine{18     \textcolor{keywordtype}{bool} \mbox{\hyperlink{structs21_1_1element_a1b6d9cf78d3040683a65498abc6248bb}{closing\_bracket}};}
+\DoxyCodeLine{19 \} \mbox{\hyperlink{namespaces21_a311e346a676eb3943cbd2684d2893cf0}{element}};}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21 \textcolor{keyword}{class }\mbox{\hyperlink{classs21_1_1_p_n_model}{PNModel}} \{}
+\DoxyCodeLine{22     std::string \mbox{\hyperlink{classs21_1_1_p_n_model_a453a585284bbe59bfa7b1aaa803308d5}{expresion}};}
+\DoxyCodeLine{23     std::stack<std::string> \mbox{\hyperlink{classs21_1_1_p_n_model_aadb630dc483bcfbeb04375e421d1ef98}{operation}};}
+\DoxyCodeLine{24     std::vector<std::string> \mbox{\hyperlink{classs21_1_1_p_n_model_ac3e6b74d3eb586d221b958b3be0e621e}{notation}};}
+\DoxyCodeLine{25     \mbox{\hyperlink{structs21_1_1element}{element}} \mbox{\hyperlink{classs21_1_1_p_n_model_aba4aa3a43e99125735566231278bb756}{default\_element}} = \{0, 1, 1, 1, 1, 0\};}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27  \textcolor{keyword}{public}:}
+\DoxyCodeLine{28     \mbox{\hyperlink{classs21_1_1_p_n_model_a970fe7b156eb6d8982a7a563ec7ab346}{PNModel}}() \{\}}
+\DoxyCodeLine{29     \textcolor{keyword}{explicit} \mbox{\hyperlink{classs21_1_1_p_n_model_a970fe7b156eb6d8982a7a563ec7ab346}{PNModel}}(std::string);}
+\DoxyCodeLine{30     \mbox{\hyperlink{classs21_1_1_p_n_model_a1f051ac364db97930157bce5b23b0b08}{\string~PNModel}}() \{\}}
+\DoxyCodeLine{31     \textcolor{keywordtype}{double} \mbox{\hyperlink{classs21_1_1_p_n_model_aa35b554080afe85738e96e34d7c983d3}{CalculateExpressions}}(\textcolor{keywordtype}{double} x = 0);}
+\DoxyCodeLine{32     \textcolor{keywordtype}{void} \mbox{\hyperlink{classs21_1_1_p_n_model_a6955b320b180fc9976020cc5987c3af2}{SetExpressions}}(std::string);}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34  \textcolor{keyword}{private}:}
+\DoxyCodeLine{35     \textcolor{keywordtype}{void} \mbox{\hyperlink{classs21_1_1_p_n_model_a075d66092ad8d7f5c5e8c283a3998d96}{TranslateExpressions}}();}
+\DoxyCodeLine{36     \textcolor{keywordtype}{bool} \mbox{\hyperlink{classs21_1_1_p_n_model_a7b0b65a9c7052229722bcc6c22aee4ab}{CheckRegex}}();}
+\DoxyCodeLine{37     \textcolor{keywordtype}{void} \mbox{\hyperlink{classs21_1_1_p_n_model_a496287630deaf6249b2978ac1f5dc723}{DigitOperations}}(\textcolor{keywordtype}{int} \&index);}
+\DoxyCodeLine{38     \textcolor{keywordtype}{int} \mbox{\hyperlink{classs21_1_1_p_n_model_aeba2127d3fa80c00ddcf48de5b4db969}{PriorityOperations}}(std::string oper);}
+\DoxyCodeLine{39     \textcolor{keywordtype}{void} \mbox{\hyperlink{classs21_1_1_p_n_model_a8ec08ac8a3917c732c1850c135500302}{OperatorOperations}}(\textcolor{keywordtype}{int} \&index);}
+\DoxyCodeLine{40     \textcolor{keywordtype}{int} \mbox{\hyperlink{classs21_1_1_p_n_model_a3bca41566b165e16b98214d1b90f0063}{ClosingBracketOperations}}();}
+\DoxyCodeLine{41     \textcolor{keywordtype}{void} \mbox{\hyperlink{classs21_1_1_p_n_model_a537f49f7744587d1f7f5b3c636662572}{FunctionOperations}}(\textcolor{keywordtype}{int} \&index);}
+\DoxyCodeLine{42     \textcolor{keywordtype}{void} \mbox{\hyperlink{classs21_1_1_p_n_model_a9bbf9023a3f3df19c2c1df14962dfd74}{PushOperations}}();}
+\DoxyCodeLine{43     \textcolor{keywordtype}{void} \mbox{\hyperlink{classs21_1_1_p_n_model_ad6414de3c071dfbd4f27208f30697223}{ClearData}}();}
+\DoxyCodeLine{44     \textcolor{keywordtype}{bool} \mbox{\hyperlink{classs21_1_1_p_n_model_af6f80323315dbccc50d6fe5127da33b8}{StringIsNumber}}(std::string);}
+\DoxyCodeLine{45     \textcolor{keywordtype}{void} \mbox{\hyperlink{classs21_1_1_p_n_model_aba842360c417174f3889e0409799fa17}{FunctionAction}}(std::stack<double> \&number, std::string action);}
+\DoxyCodeLine{46     \textcolor{keywordtype}{void} \mbox{\hyperlink{classs21_1_1_p_n_model_a0b8152a42397462dac6dc562af91a66b}{OperatorAction}}(std::stack<double> \&number, std::string action);}
+\DoxyCodeLine{47     \textcolor{keywordtype}{void} \mbox{\hyperlink{classs21_1_1_p_n_model_a701c692ac946c3463b5d43f2a5341bd6}{ChooseAction}}(std::stack<double> \&number, std::string action);}
+\DoxyCodeLine{48 \};}
+\DoxyCodeLine{49 }
+\DoxyCodeLine{50 \textcolor{keyword}{enum} \mbox{\hyperlink{namespaces21_aa911935410097e7c930ebe76669b30f1}{credit\_type}} \{ \mbox{\hyperlink{namespaces21_aa911935410097e7c930ebe76669b30f1a2dfce1acc0b822604e61efeb105355de}{ANNUITY}}, \mbox{\hyperlink{namespaces21_aa911935410097e7c930ebe76669b30f1a57f7e18c6db881c14b5848f9d8fd3776}{DIFFERENTIATED}} \};}
+\DoxyCodeLine{51 }
+\DoxyCodeLine{52 \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\mbox{\hyperlink{structs21_1_1credit}{credit}} \{}
+\DoxyCodeLine{53     \textcolor{keywordtype}{double} \mbox{\hyperlink{structs21_1_1credit_ad845d436dafe4ca16d33f698334b1d50}{SummaCredita}};}
+\DoxyCodeLine{54     \textcolor{keywordtype}{int} \mbox{\hyperlink{structs21_1_1credit_a1040c5b257daf170f6e65a651ad9ba4b}{SrokCredita}};}
+\DoxyCodeLine{55     \textcolor{keywordtype}{double} \mbox{\hyperlink{structs21_1_1credit_a28f9b611b4bb5018698f3325777a178b}{PercentStavka}};}
+\DoxyCodeLine{56     \mbox{\hyperlink{namespaces21_aa911935410097e7c930ebe76669b30f1}{credit\_type}} \mbox{\hyperlink{structs21_1_1credit_ac871e52d475a5cfcca7dfe64c0e9b04c}{type}};}
+\DoxyCodeLine{57     \textcolor{keywordtype}{double} \mbox{\hyperlink{structs21_1_1credit_aa548b3166dcdcd681c38578b5be0f6b8}{MesPlatez}};}
+\DoxyCodeLine{58     \textcolor{keywordtype}{double} \mbox{\hyperlink{structs21_1_1credit_a9b66cd3603a609b1684f260a61bad085}{MesPlatez1}};}
+\DoxyCodeLine{59     \textcolor{keywordtype}{double} \mbox{\hyperlink{structs21_1_1credit_a78e64f44ad3816eedbc76acd68c4eb1d}{Pereplata}};}
+\DoxyCodeLine{60     \textcolor{keywordtype}{double} \mbox{\hyperlink{structs21_1_1credit_ab84923637ee106421e5c39537e52f08b}{VsegoPlatez}};}
+\DoxyCodeLine{61     std::vector<double> \mbox{\hyperlink{structs21_1_1credit_a69b70ec3dd9c127dc30f4ce1c11d9f61}{Platez}};}
+\DoxyCodeLine{62     std::vector<double> \mbox{\hyperlink{structs21_1_1credit_aee36d87e63818338b63d4f62c9f46234}{PercentPlatez}};}
+\DoxyCodeLine{63 \} \mbox{\hyperlink{namespaces21_a45ab8e342a5cb929c908df742cc5b389}{credit\_struct}};}
+\DoxyCodeLine{64 }
+\DoxyCodeLine{65 \textcolor{keyword}{class }\mbox{\hyperlink{classs21_1_1_credit}{Credit}} \{}
+\DoxyCodeLine{66  \textcolor{keyword}{public}:}
+\DoxyCodeLine{67     \mbox{\hyperlink{classs21_1_1_credit_a311938d4ca2ce51ce9cec8d059f26521}{Credit}}() \{}
+\DoxyCodeLine{68         \mbox{\hyperlink{classs21_1_1_credit_a00bdb0f8b78cd960c43430624deefec2}{data}}.\mbox{\hyperlink{structs21_1_1credit_ad845d436dafe4ca16d33f698334b1d50}{SummaCredita}} = 0;}
+\DoxyCodeLine{69         \mbox{\hyperlink{classs21_1_1_credit_a00bdb0f8b78cd960c43430624deefec2}{data}}.\mbox{\hyperlink{structs21_1_1credit_a1040c5b257daf170f6e65a651ad9ba4b}{SrokCredita}} = 0;}
+\DoxyCodeLine{70         \mbox{\hyperlink{classs21_1_1_credit_a00bdb0f8b78cd960c43430624deefec2}{data}}.\mbox{\hyperlink{structs21_1_1credit_a28f9b611b4bb5018698f3325777a178b}{PercentStavka}} = 0;}
+\DoxyCodeLine{71         \mbox{\hyperlink{classs21_1_1_credit_a00bdb0f8b78cd960c43430624deefec2}{data}}.\mbox{\hyperlink{structs21_1_1credit_ac871e52d475a5cfcca7dfe64c0e9b04c}{type}} = \mbox{\hyperlink{namespaces21_aa911935410097e7c930ebe76669b30f1a2dfce1acc0b822604e61efeb105355de}{ANNUITY}};}
+\DoxyCodeLine{72         \mbox{\hyperlink{classs21_1_1_credit_a00bdb0f8b78cd960c43430624deefec2}{data}}.\mbox{\hyperlink{structs21_1_1credit_aa548b3166dcdcd681c38578b5be0f6b8}{MesPlatez}} = 0;}
+\DoxyCodeLine{73         \mbox{\hyperlink{classs21_1_1_credit_a00bdb0f8b78cd960c43430624deefec2}{data}}.\mbox{\hyperlink{structs21_1_1credit_a9b66cd3603a609b1684f260a61bad085}{MesPlatez1}} = 0;}
+\DoxyCodeLine{74         \mbox{\hyperlink{classs21_1_1_credit_a00bdb0f8b78cd960c43430624deefec2}{data}}.\mbox{\hyperlink{structs21_1_1credit_a78e64f44ad3816eedbc76acd68c4eb1d}{Pereplata}} = 0;}
+\DoxyCodeLine{75         \mbox{\hyperlink{classs21_1_1_credit_a00bdb0f8b78cd960c43430624deefec2}{data}}.\mbox{\hyperlink{structs21_1_1credit_ab84923637ee106421e5c39537e52f08b}{VsegoPlatez}} = 0;}
+\DoxyCodeLine{76     \}}
+\DoxyCodeLine{77     \mbox{\hyperlink{classs21_1_1_credit_a50aed665af3b6327d62f99d491bb8087}{\string~Credit}}() \{\}}
+\DoxyCodeLine{78     \textcolor{keywordtype}{void} \mbox{\hyperlink{classs21_1_1_credit_af0ef04e92c2e5e7caf1fe9fac9dd9704}{CalculateCredit}}();}
+\DoxyCodeLine{79     \textcolor{keywordtype}{void} \mbox{\hyperlink{classs21_1_1_credit_a7e9cedba9603cf37fe0dbc4f67afa641}{SetCredit}}(\textcolor{keywordtype}{double}, \textcolor{keywordtype}{int}, \textcolor{keywordtype}{double}, \mbox{\hyperlink{namespaces21_aa911935410097e7c930ebe76669b30f1}{credit\_type}});}
+\DoxyCodeLine{80     \mbox{\hyperlink{structs21_1_1credit}{credit\_struct}} \mbox{\hyperlink{classs21_1_1_credit_afb4e145b80cc1bcab07960d072ec821c}{GetData}}() \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classs21_1_1_credit_a00bdb0f8b78cd960c43430624deefec2}{data}}; \}}
+\DoxyCodeLine{81 }
+\DoxyCodeLine{82  \textcolor{keyword}{private}:}
+\DoxyCodeLine{83     \mbox{\hyperlink{structs21_1_1credit}{credit\_struct}} \mbox{\hyperlink{classs21_1_1_credit_a00bdb0f8b78cd960c43430624deefec2}{data}};}
+\DoxyCodeLine{84 \};}
+\DoxyCodeLine{85 }
+\DoxyCodeLine{86 \textcolor{keyword}{class }\mbox{\hyperlink{classs21_1_1_calc_model}{CalcModel}} \{}
+\DoxyCodeLine{87     \mbox{\hyperlink{classs21_1_1_p_n_model}{PNModel}} \mbox{\hyperlink{classs21_1_1_calc_model_abb791ca4bf001f00ff47b5b113ff6115}{pnmodel}};}
+\DoxyCodeLine{88     \mbox{\hyperlink{classs21_1_1_credit}{Credit}} \mbox{\hyperlink{classs21_1_1_calc_model_aa86a78597822838b85d9f8ed9729f783}{credit}};}
+\DoxyCodeLine{89 }
+\DoxyCodeLine{90  \textcolor{keyword}{public}:}
+\DoxyCodeLine{91     \mbox{\hyperlink{classs21_1_1_calc_model_abacd2cbfa37d6eb0136dc16c5c330406}{CalcModel}}() \{\}}
+\DoxyCodeLine{92     \mbox{\hyperlink{classs21_1_1_calc_model_a68ba247560caddb9edf9c6af43ce654e}{\string~CalcModel}}() \{\}}
+\DoxyCodeLine{93     std::string \mbox{\hyperlink{classs21_1_1_calc_model_ae651219d32fda8368c8ece7c2bc56ed2}{CalculateCalc}}(std::string, \textcolor{keywordtype}{double});}
+\DoxyCodeLine{94     std::vector<std::pair<double, double>> \mbox{\hyperlink{classs21_1_1_calc_model_ab6144eadb3cc55e65439921141435d45}{calcCoordinates}}(std::string expresion, \textcolor{keywordtype}{double} x\_max);}
+\DoxyCodeLine{95     \mbox{\hyperlink{structs21_1_1credit}{credit\_struct}} \mbox{\hyperlink{classs21_1_1_calc_model_a4fc70f4ba5088c071b55602286c20378}{CreditCalc}}(\textcolor{keywordtype}{double}, \textcolor{keywordtype}{int}, \textcolor{keywordtype}{double}, \mbox{\hyperlink{namespaces21_aa911935410097e7c930ebe76669b30f1}{credit\_type}});}
+\DoxyCodeLine{96 \};}
+\DoxyCodeLine{97 }
+\DoxyCodeLine{98 \}  \textcolor{comment}{// namespace s21}}
+\DoxyCodeLine{99 }
+\DoxyCodeLine{100 \textcolor{preprocessor}{\#endif  }\textcolor{comment}{// SRC\_S21SMARTCALC2\_MODEL\_H}}
+
+\end{DoxyCode}

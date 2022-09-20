@@ -1,0 +1,271 @@
+\hypertarget{classs21_1_1_view}{}\doxysection{s21\+::View Class Reference}
+\label{classs21_1_1_view}\index{s21::View@{s21::View}}
+
+
+{\ttfamily \#include $<$view.\+h$>$}
+
+Inheritance diagram for s21\+::View\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classs21_1_1_view}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classs21_1_1_view_a6e404106285ea334311feee1d2d6b289}{View}} (\mbox{\hyperlink{classs21_1_1_controller}{s21\+::\+Controller}} $\ast$\mbox{\hyperlink{classs21_1_1_view_a3ea84c587b0d6010042d31d393274df3}{controller}}, QWidget $\ast$parent=nullptr)
+\item 
+\mbox{\hyperlink{classs21_1_1_view_ad6a2a0120ecb17ef7e2572cd864120b4}{$\sim$\+View}} ()
+\item 
+void \mbox{\hyperlink{classs21_1_1_view_ac7dac4cd85140c829ffccb64e5452224}{connect\+Signals}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classs21_1_1_view_a3bf1251563dc9df694f1133fb2520145}{more\+Button\+Clicked}} ()
+\item 
+void \mbox{\hyperlink{classs21_1_1_view_afd5ea1e91097b9b357a89dc6e019f361}{push\+Button\+\_\+\+AC\+\_\+clicked}} ()
+\item 
+void \mbox{\hyperlink{classs21_1_1_view_a77892c9477b63b0eb34834d341b58f48}{backspace\+Button\+Clicked}} ()
+\item 
+void \mbox{\hyperlink{classs21_1_1_view_a2d739a45fa307be30290c88bfe02d53d}{edit\+Button\+Clicked}} ()
+\item 
+void \mbox{\hyperlink{classs21_1_1_view_a0a7c16c13430e0c389e21228fe1885e4}{calculate\+Result}} ()
+\item 
+void \mbox{\hyperlink{classs21_1_1_view_a1d90273e972883312e73b6b32b7b92d6}{checkX}} ()
+\item 
+void \mbox{\hyperlink{classs21_1_1_view_a1bfb49b9bacbc33ad9da1ef8499ea0f5}{draw\+Button\+Clicked}} ()
+\item 
+void \mbox{\hyperlink{classs21_1_1_view_a9d06d966f19b23f1d20dfb359d0dbda9}{check\+Dot}} ()
+\item 
+void \mbox{\hyperlink{classs21_1_1_view_a4607f35ef22f8004446917d8fda15e3c}{check\+Digit}} ()
+\item 
+void \mbox{\hyperlink{classs21_1_1_view_ad17e8f5fdb3a6f07c47797551433b484}{from\+\_\+button\+\_\+operations\+\_\+unary}} ()
+\item 
+void \mbox{\hyperlink{classs21_1_1_view_ab6abc85272f65eff015f233e45731b20}{from\+\_\+button\+\_\+operations}} ()
+\item 
+void \mbox{\hyperlink{classs21_1_1_view_a897b7e6b4a43cb609fd8a6923e874292}{check\+LBrackets}} ()
+\item 
+void \mbox{\hyperlink{classs21_1_1_view_aeb5ac5cc6b7732b339f893786da7af39}{check\+RBrackets}} ()
+\item 
+void \mbox{\hyperlink{classs21_1_1_view_a14467aee4483b12184a6863e70c8a4a8}{check\+Funcs}} ()
+\item 
+void \mbox{\hyperlink{classs21_1_1_view_acc022c2fba440728e41b4443aaaa075c}{Calc\+Credit\+Button\+Clicked}} ()
+\item 
+void \mbox{\hyperlink{classs21_1_1_view_a7472bf2dd286a5b9545bc5e78331d2ea}{on\+\_\+tab\+Widget\+\_\+current\+Changed}} (int index)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+QRegular\+Expression\+Match \mbox{\hyperlink{classs21_1_1_view_a14390b509e099620251188a45448410e}{match}} (QString string, QString rx)
+\item 
+bool \mbox{\hyperlink{classs21_1_1_view_a7874c131a209d45ca56b029f83cea550}{check\+\_\+and\+\_\+set\+\_\+text}} (QString new\+\_\+label, QString rx\+\_\+string, bool is\+\_\+empty\+\_\+check)
+\item 
+int \mbox{\hyperlink{classs21_1_1_view_a41772eaa70e203e570d917b2a4a6e523}{count\+Brackets}} (QString label)
+\item 
+QString \mbox{\hyperlink{classs21_1_1_view_a959c29c9b9105f5c736f6786b44bd7bc}{get\+\_\+result\+\_\+show\+\_\+string}} ()
+\item 
+void \mbox{\hyperlink{classs21_1_1_view_a21688c0fbb72dc3a08de167d8886ee5c}{Draw\+Net}} (double x\+\_\+max, double y\+\_\+max)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classs21_1_1_controller}{s21\+::\+Controller}} $\ast$ \mbox{\hyperlink{classs21_1_1_view_a3ea84c587b0d6010042d31d393274df3}{controller}}
+\item 
+\mbox{\hyperlink{view_8h_a24ac6e7ac0fc8de60ad6e64326a603b8}{Detail\+Status}} \mbox{\hyperlink{classs21_1_1_view_a30e47bafaeba596b3d9bf6d5c196af12}{stat}} = \mbox{\hyperlink{view_8h_a24ac6e7ac0fc8de60ad6e64326a603b8a882790f9beae78847942fc92a067ad46}{HIDE}}
+\item 
+Ui\+::\+View $\ast$ \mbox{\hyperlink{classs21_1_1_view_a526251f6fdb6aaeb280e370d8cd552f0}{ui}}
+\item 
+QGraphics\+Scene $\ast$ \mbox{\hyperlink{classs21_1_1_view_a47044378414e07be6753c2f46e9a0edf}{scene}}
+\item 
+std\+::multimap$<$ QDate, long double $>$ \mbox{\hyperlink{classs21_1_1_view_aa5d40bc479eb2e754023c85002b32fa8}{events}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classs21_1_1_view_a6e404106285ea334311feee1d2d6b289}\label{classs21_1_1_view_a6e404106285ea334311feee1d2d6b289}} 
+\index{s21::View@{s21::View}!View@{View}}
+\index{View@{View}!s21::View@{s21::View}}
+\doxysubsubsection{\texorpdfstring{View()}{View()}}
+{\footnotesize\ttfamily s21\+::\+View\+::\+View (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classs21_1_1_controller}{s21\+::\+Controller}} $\ast$}]{controller,  }\item[{QWidget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+\mbox{\Hypertarget{classs21_1_1_view_ad6a2a0120ecb17ef7e2572cd864120b4}\label{classs21_1_1_view_ad6a2a0120ecb17ef7e2572cd864120b4}} 
+\index{s21::View@{s21::View}!````~View@{$\sim$View}}
+\index{````~View@{$\sim$View}!s21::View@{s21::View}}
+\doxysubsubsection{\texorpdfstring{$\sim$View()}{~View()}}
+{\footnotesize\ttfamily s21\+::\+View\+::$\sim$\+View (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classs21_1_1_view_a77892c9477b63b0eb34834d341b58f48}\label{classs21_1_1_view_a77892c9477b63b0eb34834d341b58f48}} 
+\index{s21::View@{s21::View}!backspaceButtonClicked@{backspaceButtonClicked}}
+\index{backspaceButtonClicked@{backspaceButtonClicked}!s21::View@{s21::View}}
+\doxysubsubsection{\texorpdfstring{backspaceButtonClicked}{backspaceButtonClicked}}
+{\footnotesize\ttfamily void s21\+::\+View\+::backspace\+Button\+Clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+\mbox{\Hypertarget{classs21_1_1_view_acc022c2fba440728e41b4443aaaa075c}\label{classs21_1_1_view_acc022c2fba440728e41b4443aaaa075c}} 
+\index{s21::View@{s21::View}!CalcCreditButtonClicked@{CalcCreditButtonClicked}}
+\index{CalcCreditButtonClicked@{CalcCreditButtonClicked}!s21::View@{s21::View}}
+\doxysubsubsection{\texorpdfstring{CalcCreditButtonClicked}{CalcCreditButtonClicked}}
+{\footnotesize\ttfamily void s21\+::\+View\+::\+Calc\+Credit\+Button\+Clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+\mbox{\Hypertarget{classs21_1_1_view_a0a7c16c13430e0c389e21228fe1885e4}\label{classs21_1_1_view_a0a7c16c13430e0c389e21228fe1885e4}} 
+\index{s21::View@{s21::View}!calculateResult@{calculateResult}}
+\index{calculateResult@{calculateResult}!s21::View@{s21::View}}
+\doxysubsubsection{\texorpdfstring{calculateResult}{calculateResult}}
+{\footnotesize\ttfamily void s21\+::\+View\+::calculate\+Result (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+\mbox{\Hypertarget{classs21_1_1_view_a7874c131a209d45ca56b029f83cea550}\label{classs21_1_1_view_a7874c131a209d45ca56b029f83cea550}} 
+\index{s21::View@{s21::View}!check\_and\_set\_text@{check\_and\_set\_text}}
+\index{check\_and\_set\_text@{check\_and\_set\_text}!s21::View@{s21::View}}
+\doxysubsubsection{\texorpdfstring{check\_and\_set\_text()}{check\_and\_set\_text()}}
+{\footnotesize\ttfamily bool s21\+::\+View\+::check\+\_\+and\+\_\+set\+\_\+text (\begin{DoxyParamCaption}\item[{QString}]{new\+\_\+label,  }\item[{QString}]{rx\+\_\+string,  }\item[{bool}]{is\+\_\+empty\+\_\+check }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classs21_1_1_view_a4607f35ef22f8004446917d8fda15e3c}\label{classs21_1_1_view_a4607f35ef22f8004446917d8fda15e3c}} 
+\index{s21::View@{s21::View}!checkDigit@{checkDigit}}
+\index{checkDigit@{checkDigit}!s21::View@{s21::View}}
+\doxysubsubsection{\texorpdfstring{checkDigit}{checkDigit}}
+{\footnotesize\ttfamily void s21\+::\+View\+::check\+Digit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+\mbox{\Hypertarget{classs21_1_1_view_a9d06d966f19b23f1d20dfb359d0dbda9}\label{classs21_1_1_view_a9d06d966f19b23f1d20dfb359d0dbda9}} 
+\index{s21::View@{s21::View}!checkDot@{checkDot}}
+\index{checkDot@{checkDot}!s21::View@{s21::View}}
+\doxysubsubsection{\texorpdfstring{checkDot}{checkDot}}
+{\footnotesize\ttfamily void s21\+::\+View\+::check\+Dot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+\mbox{\Hypertarget{classs21_1_1_view_a14467aee4483b12184a6863e70c8a4a8}\label{classs21_1_1_view_a14467aee4483b12184a6863e70c8a4a8}} 
+\index{s21::View@{s21::View}!checkFuncs@{checkFuncs}}
+\index{checkFuncs@{checkFuncs}!s21::View@{s21::View}}
+\doxysubsubsection{\texorpdfstring{checkFuncs}{checkFuncs}}
+{\footnotesize\ttfamily void s21\+::\+View\+::check\+Funcs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+\mbox{\Hypertarget{classs21_1_1_view_a897b7e6b4a43cb609fd8a6923e874292}\label{classs21_1_1_view_a897b7e6b4a43cb609fd8a6923e874292}} 
+\index{s21::View@{s21::View}!checkLBrackets@{checkLBrackets}}
+\index{checkLBrackets@{checkLBrackets}!s21::View@{s21::View}}
+\doxysubsubsection{\texorpdfstring{checkLBrackets}{checkLBrackets}}
+{\footnotesize\ttfamily void s21\+::\+View\+::check\+LBrackets (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+\mbox{\Hypertarget{classs21_1_1_view_aeb5ac5cc6b7732b339f893786da7af39}\label{classs21_1_1_view_aeb5ac5cc6b7732b339f893786da7af39}} 
+\index{s21::View@{s21::View}!checkRBrackets@{checkRBrackets}}
+\index{checkRBrackets@{checkRBrackets}!s21::View@{s21::View}}
+\doxysubsubsection{\texorpdfstring{checkRBrackets}{checkRBrackets}}
+{\footnotesize\ttfamily void s21\+::\+View\+::check\+RBrackets (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+\mbox{\Hypertarget{classs21_1_1_view_a1d90273e972883312e73b6b32b7b92d6}\label{classs21_1_1_view_a1d90273e972883312e73b6b32b7b92d6}} 
+\index{s21::View@{s21::View}!checkX@{checkX}}
+\index{checkX@{checkX}!s21::View@{s21::View}}
+\doxysubsubsection{\texorpdfstring{checkX}{checkX}}
+{\footnotesize\ttfamily void s21\+::\+View\+::checkX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+\mbox{\Hypertarget{classs21_1_1_view_ac7dac4cd85140c829ffccb64e5452224}\label{classs21_1_1_view_ac7dac4cd85140c829ffccb64e5452224}} 
+\index{s21::View@{s21::View}!connectSignals@{connectSignals}}
+\index{connectSignals@{connectSignals}!s21::View@{s21::View}}
+\doxysubsubsection{\texorpdfstring{connectSignals()}{connectSignals()}}
+{\footnotesize\ttfamily void s21\+::\+View\+::connect\+Signals (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classs21_1_1_view_a41772eaa70e203e570d917b2a4a6e523}\label{classs21_1_1_view_a41772eaa70e203e570d917b2a4a6e523}} 
+\index{s21::View@{s21::View}!countBrackets@{countBrackets}}
+\index{countBrackets@{countBrackets}!s21::View@{s21::View}}
+\doxysubsubsection{\texorpdfstring{countBrackets()}{countBrackets()}}
+{\footnotesize\ttfamily int s21\+::\+View\+::count\+Brackets (\begin{DoxyParamCaption}\item[{QString}]{label }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classs21_1_1_view_a1bfb49b9bacbc33ad9da1ef8499ea0f5}\label{classs21_1_1_view_a1bfb49b9bacbc33ad9da1ef8499ea0f5}} 
+\index{s21::View@{s21::View}!drawButtonClicked@{drawButtonClicked}}
+\index{drawButtonClicked@{drawButtonClicked}!s21::View@{s21::View}}
+\doxysubsubsection{\texorpdfstring{drawButtonClicked}{drawButtonClicked}}
+{\footnotesize\ttfamily void s21\+::\+View\+::draw\+Button\+Clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+\mbox{\Hypertarget{classs21_1_1_view_a21688c0fbb72dc3a08de167d8886ee5c}\label{classs21_1_1_view_a21688c0fbb72dc3a08de167d8886ee5c}} 
+\index{s21::View@{s21::View}!DrawNet@{DrawNet}}
+\index{DrawNet@{DrawNet}!s21::View@{s21::View}}
+\doxysubsubsection{\texorpdfstring{DrawNet()}{DrawNet()}}
+{\footnotesize\ttfamily void s21\+::\+View\+::\+Draw\+Net (\begin{DoxyParamCaption}\item[{double}]{x\+\_\+max,  }\item[{double}]{y\+\_\+max }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classs21_1_1_view_a2d739a45fa307be30290c88bfe02d53d}\label{classs21_1_1_view_a2d739a45fa307be30290c88bfe02d53d}} 
+\index{s21::View@{s21::View}!editButtonClicked@{editButtonClicked}}
+\index{editButtonClicked@{editButtonClicked}!s21::View@{s21::View}}
+\doxysubsubsection{\texorpdfstring{editButtonClicked}{editButtonClicked}}
+{\footnotesize\ttfamily void s21\+::\+View\+::edit\+Button\+Clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+\mbox{\Hypertarget{classs21_1_1_view_ab6abc85272f65eff015f233e45731b20}\label{classs21_1_1_view_ab6abc85272f65eff015f233e45731b20}} 
+\index{s21::View@{s21::View}!from\_button\_operations@{from\_button\_operations}}
+\index{from\_button\_operations@{from\_button\_operations}!s21::View@{s21::View}}
+\doxysubsubsection{\texorpdfstring{from\_button\_operations}{from\_button\_operations}}
+{\footnotesize\ttfamily void s21\+::\+View\+::from\+\_\+button\+\_\+operations (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+\mbox{\Hypertarget{classs21_1_1_view_ad17e8f5fdb3a6f07c47797551433b484}\label{classs21_1_1_view_ad17e8f5fdb3a6f07c47797551433b484}} 
+\index{s21::View@{s21::View}!from\_button\_operations\_unary@{from\_button\_operations\_unary}}
+\index{from\_button\_operations\_unary@{from\_button\_operations\_unary}!s21::View@{s21::View}}
+\doxysubsubsection{\texorpdfstring{from\_button\_operations\_unary}{from\_button\_operations\_unary}}
+{\footnotesize\ttfamily void s21\+::\+View\+::from\+\_\+button\+\_\+operations\+\_\+unary (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+\mbox{\Hypertarget{classs21_1_1_view_a959c29c9b9105f5c736f6786b44bd7bc}\label{classs21_1_1_view_a959c29c9b9105f5c736f6786b44bd7bc}} 
+\index{s21::View@{s21::View}!get\_result\_show\_string@{get\_result\_show\_string}}
+\index{get\_result\_show\_string@{get\_result\_show\_string}!s21::View@{s21::View}}
+\doxysubsubsection{\texorpdfstring{get\_result\_show\_string()}{get\_result\_show\_string()}}
+{\footnotesize\ttfamily QString s21\+::\+View\+::get\+\_\+result\+\_\+show\+\_\+string (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classs21_1_1_view_a14390b509e099620251188a45448410e}\label{classs21_1_1_view_a14390b509e099620251188a45448410e}} 
+\index{s21::View@{s21::View}!match@{match}}
+\index{match@{match}!s21::View@{s21::View}}
+\doxysubsubsection{\texorpdfstring{match()}{match()}}
+{\footnotesize\ttfamily QRegular\+Expression\+Match s21\+::\+View\+::match (\begin{DoxyParamCaption}\item[{QString}]{string,  }\item[{QString}]{rx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classs21_1_1_view_a3bf1251563dc9df694f1133fb2520145}\label{classs21_1_1_view_a3bf1251563dc9df694f1133fb2520145}} 
+\index{s21::View@{s21::View}!moreButtonClicked@{moreButtonClicked}}
+\index{moreButtonClicked@{moreButtonClicked}!s21::View@{s21::View}}
+\doxysubsubsection{\texorpdfstring{moreButtonClicked}{moreButtonClicked}}
+{\footnotesize\ttfamily void s21\+::\+View\+::more\+Button\+Clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+\mbox{\Hypertarget{classs21_1_1_view_a7472bf2dd286a5b9545bc5e78331d2ea}\label{classs21_1_1_view_a7472bf2dd286a5b9545bc5e78331d2ea}} 
+\index{s21::View@{s21::View}!on\_tabWidget\_currentChanged@{on\_tabWidget\_currentChanged}}
+\index{on\_tabWidget\_currentChanged@{on\_tabWidget\_currentChanged}!s21::View@{s21::View}}
+\doxysubsubsection{\texorpdfstring{on\_tabWidget\_currentChanged}{on\_tabWidget\_currentChanged}}
+{\footnotesize\ttfamily void s21\+::\+View\+::on\+\_\+tab\+Widget\+\_\+current\+Changed (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+\mbox{\Hypertarget{classs21_1_1_view_afd5ea1e91097b9b357a89dc6e019f361}\label{classs21_1_1_view_afd5ea1e91097b9b357a89dc6e019f361}} 
+\index{s21::View@{s21::View}!pushButton\_AC\_clicked@{pushButton\_AC\_clicked}}
+\index{pushButton\_AC\_clicked@{pushButton\_AC\_clicked}!s21::View@{s21::View}}
+\doxysubsubsection{\texorpdfstring{pushButton\_AC\_clicked}{pushButton\_AC\_clicked}}
+{\footnotesize\ttfamily void s21\+::\+View\+::push\+Button\+\_\+\+AC\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classs21_1_1_view_a3ea84c587b0d6010042d31d393274df3}\label{classs21_1_1_view_a3ea84c587b0d6010042d31d393274df3}} 
+\index{s21::View@{s21::View}!controller@{controller}}
+\index{controller@{controller}!s21::View@{s21::View}}
+\doxysubsubsection{\texorpdfstring{controller}{controller}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classs21_1_1_controller}{s21\+::\+Controller}}$\ast$ s21\+::\+View\+::controller\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classs21_1_1_view_aa5d40bc479eb2e754023c85002b32fa8}\label{classs21_1_1_view_aa5d40bc479eb2e754023c85002b32fa8}} 
+\index{s21::View@{s21::View}!events@{events}}
+\index{events@{events}!s21::View@{s21::View}}
+\doxysubsubsection{\texorpdfstring{events}{events}}
+{\footnotesize\ttfamily std\+::multimap$<$QDate, long double$>$ s21\+::\+View\+::events\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classs21_1_1_view_a47044378414e07be6753c2f46e9a0edf}\label{classs21_1_1_view_a47044378414e07be6753c2f46e9a0edf}} 
+\index{s21::View@{s21::View}!scene@{scene}}
+\index{scene@{scene}!s21::View@{s21::View}}
+\doxysubsubsection{\texorpdfstring{scene}{scene}}
+{\footnotesize\ttfamily QGraphics\+Scene$\ast$ s21\+::\+View\+::scene\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classs21_1_1_view_a30e47bafaeba596b3d9bf6d5c196af12}\label{classs21_1_1_view_a30e47bafaeba596b3d9bf6d5c196af12}} 
+\index{s21::View@{s21::View}!stat@{stat}}
+\index{stat@{stat}!s21::View@{s21::View}}
+\doxysubsubsection{\texorpdfstring{stat}{stat}}
+{\footnotesize\ttfamily \mbox{\hyperlink{view_8h_a24ac6e7ac0fc8de60ad6e64326a603b8}{Detail\+Status}} s21\+::\+View\+::stat = \mbox{\hyperlink{view_8h_a24ac6e7ac0fc8de60ad6e64326a603b8a882790f9beae78847942fc92a067ad46}{HIDE}}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classs21_1_1_view_a526251f6fdb6aaeb280e370d8cd552f0}\label{classs21_1_1_view_a526251f6fdb6aaeb280e370d8cd552f0}} 
+\index{s21::View@{s21::View}!ui@{ui}}
+\index{ui@{ui}!s21::View@{s21::View}}
+\doxysubsubsection{\texorpdfstring{ui}{ui}}
+{\footnotesize\ttfamily Ui\+::\+View$\ast$ s21\+::\+View\+::ui\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/alvintha/projects/\+CPP3\+\_\+\+Smart\+Calc\+\_\+v2.\+0-\/0/src/\+Smart\+Calc2/\mbox{\hyperlink{view_8h}{view.\+h}}\item 
+/\+Users/alvintha/projects/\+CPP3\+\_\+\+Smart\+Calc\+\_\+v2.\+0-\/0/src/\+Smart\+Calc2/\mbox{\hyperlink{view_8cpp}{view.\+cpp}}\end{DoxyCompactItemize}

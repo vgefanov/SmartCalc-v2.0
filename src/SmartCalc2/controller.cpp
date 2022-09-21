@@ -4,7 +4,7 @@ std::string s21::Controller::calc(std::string const &expresion, double x) {
   return model->CalculateCalc(expresion, x);
 }
 
-std::vector<std::pair<double, double>> s21::Controller::getCoordinates(
+std::vector<std::pair<double, double>> s21::Controller::GetCoordinates(
     std::string const &expresion, double x_max) {
   return model->calcCoordinates(expresion, x_max);
 }

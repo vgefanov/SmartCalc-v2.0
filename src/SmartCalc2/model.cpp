@@ -8,33 +8,23 @@ void s21::PNModel::TranslateExpressions() {
   bool check = 1;
   if (CheckRegex()) check = 0;
   for (int i = 0; i < static_cast<int>(expresion.size()) && check; i++) {
-    if (isdigit(expresion[i]) && default_element.number) {
+    if (isdigit(expresion[i])) {
       DigitOperations(i);
-      default_element = {1, 0, 0, 0, 0, 1};
-    } else if (expresion[i] == '(' && default_element.open_bracket) {
+    } else if (expresion[i] == '(') {
       operation.push("(");
-      default_element = {1, 1, 1, 1, 1, 0};
     } else if (PriorityOperations(expresion.substr(i, 1)) &&
-               default_element.calc_operator && expresion[i] != '(') {
+               expresion[i] != '(') {
       OperatorOperations(i);
-      default_element = {0, 1, 1, 1, 1, 0};
-    } else if (expresion[i] == ')' && default_element.closing_bracket) {
+    } else if (expresion[i] == ')') {
       check = ClosingBracketOperations() ? 0 : 1;
-      default_element = {1, 0, 0, 0, 0, 1};
-    } else if (expresion[i] == 'x' && default_element.variable_x) {
+    } else if (expresion[i] == 'x') {
       notation.push_back("x");
-      default_element = {1, 0, 0, 0, 0, 1};
     } else if ((PriorityOperations(expresion.substr(i, 1)) == 4 ||
-                PriorityOperations(expresion.substr(i, 4)) == 1) &&
-               default_element.unary_funcs) {
+                PriorityOperations(expresion.substr(i, 4)) == 1)) {
       FunctionOperations(i);
-      default_element = {1, 1, 0, 1, 1, 0};
-    } else {
-      check = 0;
     }
     if (i == -1) check = 0;
   }
-  if (default_element.number) check = 0;
   if (check)
     PushOperations();
   else
@@ -250,7 +240,6 @@ void s21::PNModel::SetExpressions(const std::string expresion) {
 
 void s21::PNModel::ClearData() {
   while (operation.size() != 0) operation.pop();
-  default_element = {0, 1, 1, 1, 1, 0};
   notation.clear();
 }
 
@@ -284,8 +273,6 @@ void s21::Credit::CalculateCredit() {
         (pow((1 + MesPercentStavka), data.SrokCredita) - 1);
     data.MesPlatez = data.SummaCredita * AnnuityCof;
     data.VsegoPlatez = data.MesPlatez * data.SrokCredita;
-    data.Platez.push_back(data.MesPlatez);
-    data.PercentPlatez.push_back(data.SummaCredita * MesPercentStavka);
   } else {
     for (int i = 0; i < data.SrokCredita; i++) {
       double ChastOsnDolga = data.SummaCredita / data.SrokCredita;
@@ -296,8 +283,6 @@ void s21::Credit::CalculateCredit() {
         data.MesPlatez1 = data.MesPlatez;
       }
       data.VsegoPlatez += data.MesPlatez;
-      data.Platez.push_back(data.MesPlatez);
-      data.PercentPlatez.push_back(data.SummaCredita * MesPercentStavka);
     }
   }
   data.Pereplata = data.VsegoPlatez - data.SummaCredita;
@@ -313,8 +298,6 @@ void s21::Credit::SetCredit(double SummaCredita, int SrokCredita,
   data.MesPlatez1 = 0;
   data.Pereplata = 0;
   data.VsegoPlatez = 0;
-  data.Platez.clear();
-  data.PercentPlatez.clear();
   CalculateCredit();
 }
 
@@ -325,5 +308,3 @@ s21::credit_struct s21::CalcModel::CreditCalc(double SummaCredita,
   credit.SetCredit(SummaCredita, SrokCredita, PercentStavka, type);
   return credit.GetData();
 }
-
-// int main() {}

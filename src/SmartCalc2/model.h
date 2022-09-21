@@ -9,23 +9,18 @@
 #include <vector>
 
 namespace s21 {
-typedef struct element {
-  bool calc_operator;
-  bool unary_funcs;
-  bool variable_x;
-  bool number;
-  bool open_bracket;
-  bool closing_bracket;
-} element;
 
 class PNModel {
   std::string expresion;
   std::stack<std::string> operation;
   std::vector<std::string> notation;
-  element default_element = {0, 1, 1, 1, 1, 0};
 
  public:
   PNModel() {}
+  PNModel(const PNModel &other) = delete;
+  PNModel(PNModel &&other) = delete;
+  PNModel &operator=(const PNModel &other) = delete;
+  PNModel &operator=(PNModel &&other) = delete;
   explicit PNModel(std::string);
   ~PNModel() {}
   double CalculateExpressions(double x = 0);
@@ -58,8 +53,6 @@ typedef struct credit {
   double MesPlatez1;
   double Pereplata;
   double VsegoPlatez;
-  std::vector<double> Platez;
-  std::vector<double> PercentPlatez;
 } credit_struct;
 
 class Credit {
@@ -74,6 +67,10 @@ class Credit {
     data.Pereplata = 0;
     data.VsegoPlatez = 0;
   }
+  Credit(const Credit &other) = delete;
+  Credit(Credit &&other) = delete;
+  Credit &operator=(const Credit &other) = delete;
+  Credit &operator=(Credit &&other) = delete;
   ~Credit() {}
   void CalculateCredit();
   void SetCredit(double, int, double, credit_type);
@@ -89,6 +86,10 @@ class CalcModel {
 
  public:
   CalcModel() {}
+  CalcModel(const CalcModel &other) = delete;
+  CalcModel(CalcModel &&other) = delete;
+  CalcModel &operator=(const CalcModel &other) = delete;
+  CalcModel &operator=(CalcModel &&other) = delete;
   ~CalcModel() {}
   std::string CalculateCalc(std::string const &expresion, double x);
   std::vector<std::pair<double, double>> calcCoordinates(

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['ui_0',['Ui',['../namespace_ui.html',1,'']]]
+  ['s21_0',['s21',['../namespaces21.html',1,'']]]
 ];

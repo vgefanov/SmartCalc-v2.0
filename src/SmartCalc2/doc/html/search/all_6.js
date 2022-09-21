@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['get_5fresult_5fshow_5fstring_0',['get_result_show_string',['../classs21_1_1_view.html#a959c29c9b9105f5c736f6786b44bd7bc',1,'s21::View']]],
-  ['getcoordinates_1',['getCoordinates',['../classs21_1_1_controller.html#a44fe7547ce5cbd622a4ff38b1bcd85c0',1,'s21::Controller']]],
-  ['getdata_2',['GetData',['../classs21_1_1_credit.html#afb4e145b80cc1bcab07960d072ec821c',1,'s21::Credit']]]
+  ['from_5fbutton_5foperations_0',['from_button_operations',['../classs21_1_1_view.html#ab6abc85272f65eff015f233e45731b20',1,'s21::View']]],
+  ['from_5fbutton_5foperations_5funary_1',['from_button_operations_unary',['../classs21_1_1_view.html#ad17e8f5fdb3a6f07c47797551433b484',1,'s21::View']]],
+  ['functionaction_2',['FunctionAction',['../classs21_1_1_p_n_model.html#aba842360c417174f3889e0409799fa17',1,'s21::PNModel']]],
+  ['functionoperations_3',['FunctionOperations',['../classs21_1_1_p_n_model.html#a537f49f7744587d1f7f5b3c636662572',1,'s21::PNModel']]]
 ];

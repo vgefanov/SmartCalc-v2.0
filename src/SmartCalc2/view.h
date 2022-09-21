@@ -5,6 +5,7 @@
 #include <QGraphicsScene>
 #include <QGraphicsView>
 #include <QMainWindow>
+#include <QRegularExpression>
 
 #include "controller.h"
 
@@ -33,7 +34,6 @@ class View : public QMainWindow {
   void checkX();
   void drawButtonClicked();
   void checkDot();
-  void checkDigit();
   void from_button_operations_unary();
   void from_button_operations();
   void checkLBrackets();

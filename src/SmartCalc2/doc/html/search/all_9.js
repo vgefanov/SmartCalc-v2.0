@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['notation_0',['notation',['../classs21_1_1_p_n_model.html#ac3e6b74d3eb586d221b958b3be0e621e',1,'s21::PNModel']]],
-  ['number_1',['number',['../structs21_1_1element.html#aa5064d2270d14e677d4ce3a2a27cd48f',1,'s21::element']]]
+  ['initializer_0',['initializer',['../structanonymous__namespace_02qrc__resource_8cpp_03_1_1initializer.html',1,'anonymous_namespace{qrc_resource.cpp}::initializer'],['../structanonymous__namespace_02qrc__resource_8cpp_03_1_1initializer.html#a99adbda8d7cb9c1144a24220e04b2aec',1,'anonymous_namespace{qrc_resource.cpp}::initializer::initializer()']]]
 ];

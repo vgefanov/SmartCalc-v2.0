@@ -1,8 +1,8 @@
 \hypertarget{controller_8h_source}{}\doxysection{/\+Users/alvintha/projects/\+CPP3\+\_\+\+Smart\+Calc\+\_\+v2.0-\/0/src/\+Smart\+Calc2/controller.h}
 \mbox{\hyperlink{controller_8h}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
-\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef SRC\_S21SMARTCALC2\_CONTROLLER\_H}}
-\DoxyCodeLine{2 \textcolor{preprocessor}{\#define SRC\_S21SMARTCALC2\_CONTROLLER\_H}}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef SRC\_SMARTCALC2\_CONTROLLER\_H\_}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define SRC\_SMARTCALC2\_CONTROLLER\_H\_}}
 \DoxyCodeLine{3 }
 \DoxyCodeLine{4 \textcolor{preprocessor}{\#include <iostream>}}
 \DoxyCodeLine{5 \textcolor{preprocessor}{\#include <string>}}
@@ -11,17 +11,22 @@
 \DoxyCodeLine{8 }
 \DoxyCodeLine{9 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespaces21}{s21}} \{}
 \DoxyCodeLine{10 \textcolor{keyword}{class }\mbox{\hyperlink{classs21_1_1_controller}{Controller}} \{}
-\DoxyCodeLine{11     \mbox{\hyperlink{classs21_1_1_calc_model}{CalcModel}} *\mbox{\hyperlink{classs21_1_1_controller_ae1ae44ef41756cd082f576dbb88d0763}{model}};}
+\DoxyCodeLine{11   \mbox{\hyperlink{classs21_1_1_calc_model}{CalcModel}} *\mbox{\hyperlink{classs21_1_1_controller_ae1ae44ef41756cd082f576dbb88d0763}{model}};}
 \DoxyCodeLine{12 }
 \DoxyCodeLine{13  \textcolor{keyword}{public}:}
-\DoxyCodeLine{14     \mbox{\hyperlink{classs21_1_1_controller_ac18cd9a02306d74ca707c22bccac82b6}{Controller}}() : \mbox{\hyperlink{classs21_1_1_controller_ae1ae44ef41756cd082f576dbb88d0763}{model}}(nullptr) \{\}}
-\DoxyCodeLine{15     \textcolor{keyword}{explicit} \mbox{\hyperlink{classs21_1_1_controller_a13132de074aad3fac52b3d40cad763d9}{Controller}}(\mbox{\hyperlink{classs21_1_1_calc_model}{CalcModel}} *\mbox{\hyperlink{classs21_1_1_controller_ae1ae44ef41756cd082f576dbb88d0763}{model}}) : \mbox{\hyperlink{classs21_1_1_controller_ae1ae44ef41756cd082f576dbb88d0763}{model}}(\mbox{\hyperlink{classs21_1_1_controller_ae1ae44ef41756cd082f576dbb88d0763}{model}}) \{\}}
-\DoxyCodeLine{16     \mbox{\hyperlink{classs21_1_1_controller_a074728e2423d5f656924bfac0c623805}{\string~Controller}}() \{\}}
-\DoxyCodeLine{17     std::string \mbox{\hyperlink{classs21_1_1_controller_ae23f519058e579a7a38d5db9d673d288}{calc}}(std::string expresion, \textcolor{keywordtype}{double} x = 0.0);}
-\DoxyCodeLine{18     std::vector<std::pair<double, double>> \mbox{\hyperlink{classs21_1_1_controller_a44fe7547ce5cbd622a4ff38b1bcd85c0}{getCoordinates}}(std::string expresion, \textcolor{keywordtype}{double} x\_max);}
-\DoxyCodeLine{19     \mbox{\hyperlink{structs21_1_1credit}{credit}} \mbox{\hyperlink{classs21_1_1_controller_ad9cf11e4cc683df1434ac35fa64210b8}{CalcCredit}}(\textcolor{keywordtype}{double} sum, \textcolor{keywordtype}{int} month, \textcolor{keywordtype}{double} percent, \mbox{\hyperlink{namespaces21_aa911935410097e7c930ebe76669b30f1}{credit\_type}} type);}
-\DoxyCodeLine{20 \};}
-\DoxyCodeLine{21 \}  \textcolor{comment}{// namespace s21}}
-\DoxyCodeLine{22 \textcolor{preprocessor}{\#endif  }\textcolor{comment}{// SRC\_S21SMARTCALC2\_CONTROLLER\_H}}
+\DoxyCodeLine{14   \mbox{\hyperlink{classs21_1_1_controller_ac18cd9a02306d74ca707c22bccac82b6}{Controller}}() : \mbox{\hyperlink{classs21_1_1_controller_ae1ae44ef41756cd082f576dbb88d0763}{model}}(nullptr) \{\}}
+\DoxyCodeLine{15   \mbox{\hyperlink{classs21_1_1_controller_a248b1b9810547cdab92e267da0e85023}{Controller}}(\textcolor{keyword}{const} \mbox{\hyperlink{classs21_1_1_controller}{Controller}} \&other) = \textcolor{keyword}{delete};}
+\DoxyCodeLine{16   \mbox{\hyperlink{classs21_1_1_controller_a8d74a99fda4c6c196575aae4b141d3b3}{Controller}}(\mbox{\hyperlink{classs21_1_1_controller}{Controller}} \&\&other) = \textcolor{keyword}{delete};}
+\DoxyCodeLine{17   \mbox{\hyperlink{classs21_1_1_controller}{Controller}} \&\mbox{\hyperlink{classs21_1_1_controller_a37e94596b59efe96321d9914d69303dc}{operator=}}(\textcolor{keyword}{const} \mbox{\hyperlink{classs21_1_1_controller}{Controller}} \&other) = \textcolor{keyword}{delete};}
+\DoxyCodeLine{18   \mbox{\hyperlink{classs21_1_1_controller}{Controller}} \&\mbox{\hyperlink{classs21_1_1_controller_ad797585e091e5ff64d84f8295dd50c73}{operator=}}(\mbox{\hyperlink{classs21_1_1_controller}{Controller}} \&\&other) = \textcolor{keyword}{delete};}
+\DoxyCodeLine{19   \textcolor{keyword}{explicit} \mbox{\hyperlink{classs21_1_1_controller_a13132de074aad3fac52b3d40cad763d9}{Controller}}(\mbox{\hyperlink{classs21_1_1_calc_model}{CalcModel}} *\mbox{\hyperlink{classs21_1_1_controller_ae1ae44ef41756cd082f576dbb88d0763}{model}}) : \mbox{\hyperlink{classs21_1_1_controller_ae1ae44ef41756cd082f576dbb88d0763}{model}}(\mbox{\hyperlink{classs21_1_1_controller_ae1ae44ef41756cd082f576dbb88d0763}{model}}) \{\}}
+\DoxyCodeLine{20   \mbox{\hyperlink{classs21_1_1_controller_a074728e2423d5f656924bfac0c623805}{\string~Controller}}() \{\}}
+\DoxyCodeLine{21   std::string \mbox{\hyperlink{classs21_1_1_controller_ac37ed14ecf709054f867f9b5fbae5dcf}{calc}}(std::string \textcolor{keyword}{const} \&expresion, \textcolor{keywordtype}{double} x = 0.0);}
+\DoxyCodeLine{22   std::vector<std::pair<double, double>> \mbox{\hyperlink{classs21_1_1_controller_abd2dc2fdd3f79751be6421a6b8d2b8ae}{GetCoordinates}}(}
+\DoxyCodeLine{23       std::string \textcolor{keyword}{const} \&expresion, \textcolor{keywordtype}{double} x\_max);}
+\DoxyCodeLine{24   \mbox{\hyperlink{structs21_1_1credit}{credit}} \mbox{\hyperlink{classs21_1_1_controller_ad9cf11e4cc683df1434ac35fa64210b8}{CalcCredit}}(\textcolor{keywordtype}{double} sum, \textcolor{keywordtype}{int} month, \textcolor{keywordtype}{double} percent, \mbox{\hyperlink{namespaces21_aa911935410097e7c930ebe76669b30f1}{credit\_type}} type);}
+\DoxyCodeLine{25 \};}
+\DoxyCodeLine{26 \}  \textcolor{comment}{// namespace s21}}
+\DoxyCodeLine{27 \textcolor{preprocessor}{\#endif  }\textcolor{comment}{// SRC\_SMARTCALC2\_CONTROLLER\_H\_}}
 
 \end{DoxyCode}

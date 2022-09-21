@@ -3,7 +3,7 @@ CC = gcc
 CFLAGS =-Wall -Wextra -Werror -lstdc++ -std=c++17
 CFLAGS_TEST = -lgtest
 CFLAGS_GCOV =--coverage -fkeep-inline-functions
-CPPCHECK_FLAGS =--enable=all --suppress=missingIncludeSystem
+CPPCHECK_FLAGS =--enable=all --suppressions-list=suppression.cfg
 OUTFILE = model
 OUTFILE_TEST = test
 SOURCES = $(OUTFILE).cpp
@@ -24,7 +24,7 @@ uninstall: prepare
 	-rmdir bin/
 
 clean: prepare
-	@-rm *.gcov *.gcda *.gcno *.info *.cfg *.xml *.gz 2>/dev/null
+	@-rm *.gcov *.gcda *.gcno *.info *.xml *.gz 2>/dev/null
 	@-rm test 2>/dev/null
 	@-rm -rf lcov_report bin report 2>/dev/null
 	@make -f qMakefile clean
@@ -44,7 +44,7 @@ tests:
 	./$(OUTFILE_TEST)
 
 gcov_report:
-	@$(CC) $(CFLAGS) $(CFLAGS_TEST) $(CFLAGS_GCOV) $(SOURCES) $(SOURCES_TEST) -o $(OUTFILE_TEST)
+	$(CC) $(CFLAGS) $(CFLAGS_TEST) $(CFLAGS_GCOV) $(SOURCES) $(SOURCES_TEST) -o $(OUTFILE_TEST)
 	./$(OUTFILE_TEST)
 	gcov $(OUTFILE)
 	gcov -f $(OUTFILE).gcda
@@ -58,18 +58,12 @@ prepare:
 checkall: style check leaks
 
 style:
-	cp ../../materials/linters/.clang-format ./
-	clang-format -i main.cpp controller.cpp controller.h model.cpp model.h view.cpp view.h test.cpp 
+	@cp ../../materials/linters/.clang-format ./
+	@clang-format -i main.cpp controller.cpp controller.h model.cpp model.h view.cpp view.h test.cpp 
 	clang-format -n main.cpp controller.cpp controller.h model.cpp model.h view.cpp view.h test.cpp
 
 check:
-	cppcheck --std=c++17 --language=c++ $(CPPCHECK_FLAGS) $(CHECK_FILES)
+	@cppcheck --std=c++17 --language=c++ $(CPPCHECK_FLAGS) $(CHECK_FILES)
 
 leaks: tests
-	CK_FORK=no leaks --atExit -- ./$(OUTFILE_TEST)
-
-brew:
-    # cd ~/goinfre
-    # git clone https://github.com/Homebrew/brew homebrew
-    # eval "$(~/goinfre/homebrew/bin/brew shellenv)"
-    # brew install lcov
+	@CK_FORK=no leaks --atExit -- ./$(OUTFILE_TEST)

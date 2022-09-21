@@ -9,11 +9,19 @@
 \item 
 \mbox{\hyperlink{classs21_1_1_calc_model_abacd2cbfa37d6eb0136dc16c5c330406}{Calc\+Model}} ()
 \item 
+\mbox{\hyperlink{classs21_1_1_calc_model_af41f3bd3754cdc3e600651bb2d546166}{Calc\+Model}} (const \mbox{\hyperlink{classs21_1_1_calc_model}{Calc\+Model}} \&other)=delete
+\item 
+\mbox{\hyperlink{classs21_1_1_calc_model_ae96c6e8b4c4e87cc97a213039b44962e}{Calc\+Model}} (\mbox{\hyperlink{classs21_1_1_calc_model}{Calc\+Model}} \&\&other)=delete
+\item 
+\mbox{\hyperlink{classs21_1_1_calc_model}{Calc\+Model}} \& \mbox{\hyperlink{classs21_1_1_calc_model_ad82beffb2b3e59f20bc61fa8e74eda21}{operator=}} (const \mbox{\hyperlink{classs21_1_1_calc_model}{Calc\+Model}} \&other)=delete
+\item 
+\mbox{\hyperlink{classs21_1_1_calc_model}{Calc\+Model}} \& \mbox{\hyperlink{classs21_1_1_calc_model_add479dd25e4cf5bb0e496b55cc482af1}{operator=}} (\mbox{\hyperlink{classs21_1_1_calc_model}{Calc\+Model}} \&\&other)=delete
+\item 
 \mbox{\hyperlink{classs21_1_1_calc_model_a68ba247560caddb9edf9c6af43ce654e}{$\sim$\+Calc\+Model}} ()
 \item 
-std\+::string \mbox{\hyperlink{classs21_1_1_calc_model_ae651219d32fda8368c8ece7c2bc56ed2}{Calculate\+Calc}} (std\+::string, double)
+std\+::string \mbox{\hyperlink{classs21_1_1_calc_model_a130ba1191aa0314bacb2a77edcbb9728}{Calculate\+Calc}} (std\+::string const \&expresion, double x)
 \item 
-std\+::vector$<$ std\+::pair$<$ double, double $>$ $>$ \mbox{\hyperlink{classs21_1_1_calc_model_ab6144eadb3cc55e65439921141435d45}{calc\+Coordinates}} (std\+::string expresion, double x\+\_\+max)
+std\+::vector$<$ std\+::pair$<$ double, double $>$ $>$ \mbox{\hyperlink{classs21_1_1_calc_model_a2bf3b6fafe34b46d7475435324cf3fc1}{calc\+Coordinates}} (std\+::string const \&expresion, double x\+\_\+max)
 \item 
 \mbox{\hyperlink{namespaces21_a45ab8e342a5cb929c908df742cc5b389}{credit\+\_\+struct}} \mbox{\hyperlink{classs21_1_1_calc_model_a4fc70f4ba5088c071b55602286c20378}{Credit\+Calc}} (double, int, double, \mbox{\hyperlink{namespaces21_aa911935410097e7c930ebe76669b30f1}{credit\+\_\+type}})
 \end{DoxyCompactItemize}
@@ -30,8 +38,20 @@ std\+::vector$<$ std\+::pair$<$ double, double $>$ $>$ \mbox{\hyperlink{classs21
 \mbox{\Hypertarget{classs21_1_1_calc_model_abacd2cbfa37d6eb0136dc16c5c330406}\label{classs21_1_1_calc_model_abacd2cbfa37d6eb0136dc16c5c330406}} 
 \index{s21::CalcModel@{s21::CalcModel}!CalcModel@{CalcModel}}
 \index{CalcModel@{CalcModel}!s21::CalcModel@{s21::CalcModel}}
-\doxysubsubsection{\texorpdfstring{CalcModel()}{CalcModel()}}
+\doxysubsubsection{\texorpdfstring{CalcModel()}{CalcModel()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
 {\footnotesize\ttfamily s21\+::\+Calc\+Model\+::\+Calc\+Model (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classs21_1_1_calc_model_af41f3bd3754cdc3e600651bb2d546166}\label{classs21_1_1_calc_model_af41f3bd3754cdc3e600651bb2d546166}} 
+\index{s21::CalcModel@{s21::CalcModel}!CalcModel@{CalcModel}}
+\index{CalcModel@{CalcModel}!s21::CalcModel@{s21::CalcModel}}
+\doxysubsubsection{\texorpdfstring{CalcModel()}{CalcModel()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily s21\+::\+Calc\+Model\+::\+Calc\+Model (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classs21_1_1_calc_model}{Calc\+Model}} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{classs21_1_1_calc_model_ae96c6e8b4c4e87cc97a213039b44962e}\label{classs21_1_1_calc_model_ae96c6e8b4c4e87cc97a213039b44962e}} 
+\index{s21::CalcModel@{s21::CalcModel}!CalcModel@{CalcModel}}
+\index{CalcModel@{CalcModel}!s21::CalcModel@{s21::CalcModel}}
+\doxysubsubsection{\texorpdfstring{CalcModel()}{CalcModel()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily s21\+::\+Calc\+Model\+::\+Calc\+Model (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classs21_1_1_calc_model}{Calc\+Model}} \&\&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
 
 \mbox{\Hypertarget{classs21_1_1_calc_model_a68ba247560caddb9edf9c6af43ce654e}\label{classs21_1_1_calc_model_a68ba247560caddb9edf9c6af43ce654e}} 
 \index{s21::CalcModel@{s21::CalcModel}!````~CalcModel@{$\sim$CalcModel}}
@@ -42,23 +62,35 @@ std\+::vector$<$ std\+::pair$<$ double, double $>$ $>$ \mbox{\hyperlink{classs21
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classs21_1_1_calc_model_ab6144eadb3cc55e65439921141435d45}\label{classs21_1_1_calc_model_ab6144eadb3cc55e65439921141435d45}} 
+\mbox{\Hypertarget{classs21_1_1_calc_model_a2bf3b6fafe34b46d7475435324cf3fc1}\label{classs21_1_1_calc_model_a2bf3b6fafe34b46d7475435324cf3fc1}} 
 \index{s21::CalcModel@{s21::CalcModel}!calcCoordinates@{calcCoordinates}}
 \index{calcCoordinates@{calcCoordinates}!s21::CalcModel@{s21::CalcModel}}
 \doxysubsubsection{\texorpdfstring{calcCoordinates()}{calcCoordinates()}}
-{\footnotesize\ttfamily std\+::vector$<$ std\+::pair$<$ double, double $>$ $>$ s21\+::\+Calc\+Model\+::calc\+Coordinates (\begin{DoxyParamCaption}\item[{std\+::string}]{expresion,  }\item[{double}]{x\+\_\+max }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::pair$<$ double, double $>$ $>$ s21\+::\+Calc\+Model\+::calc\+Coordinates (\begin{DoxyParamCaption}\item[{std\+::string const \&}]{expresion,  }\item[{double}]{x\+\_\+max }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{classs21_1_1_calc_model_ae651219d32fda8368c8ece7c2bc56ed2}\label{classs21_1_1_calc_model_ae651219d32fda8368c8ece7c2bc56ed2}} 
+\mbox{\Hypertarget{classs21_1_1_calc_model_a130ba1191aa0314bacb2a77edcbb9728}\label{classs21_1_1_calc_model_a130ba1191aa0314bacb2a77edcbb9728}} 
 \index{s21::CalcModel@{s21::CalcModel}!CalculateCalc@{CalculateCalc}}
 \index{CalculateCalc@{CalculateCalc}!s21::CalcModel@{s21::CalcModel}}
 \doxysubsubsection{\texorpdfstring{CalculateCalc()}{CalculateCalc()}}
-{\footnotesize\ttfamily std\+::string s21\+::\+Calc\+Model\+::\+Calculate\+Calc (\begin{DoxyParamCaption}\item[{std\+::string}]{expresion,  }\item[{double}]{x }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily std\+::string s21\+::\+Calc\+Model\+::\+Calculate\+Calc (\begin{DoxyParamCaption}\item[{std\+::string const \&}]{expresion,  }\item[{double}]{x }\end{DoxyParamCaption})}
 
 \mbox{\Hypertarget{classs21_1_1_calc_model_a4fc70f4ba5088c071b55602286c20378}\label{classs21_1_1_calc_model_a4fc70f4ba5088c071b55602286c20378}} 
 \index{s21::CalcModel@{s21::CalcModel}!CreditCalc@{CreditCalc}}
 \index{CreditCalc@{CreditCalc}!s21::CalcModel@{s21::CalcModel}}
 \doxysubsubsection{\texorpdfstring{CreditCalc()}{CreditCalc()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{namespaces21_a45ab8e342a5cb929c908df742cc5b389}{s21\+::credit\+\_\+struct}} s21\+::\+Calc\+Model\+::\+Credit\+Calc (\begin{DoxyParamCaption}\item[{double}]{Summa\+Credita,  }\item[{int}]{Srok\+Credita,  }\item[{double}]{Percent\+Stavka,  }\item[{\mbox{\hyperlink{namespaces21_aa911935410097e7c930ebe76669b30f1}{credit\+\_\+type}}}]{type }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classs21_1_1_calc_model_add479dd25e4cf5bb0e496b55cc482af1}\label{classs21_1_1_calc_model_add479dd25e4cf5bb0e496b55cc482af1}} 
+\index{s21::CalcModel@{s21::CalcModel}!operator=@{operator=}}
+\index{operator=@{operator=}!s21::CalcModel@{s21::CalcModel}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classs21_1_1_calc_model}{Calc\+Model}} \& s21\+::\+Calc\+Model\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classs21_1_1_calc_model}{Calc\+Model}} \&\&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{classs21_1_1_calc_model_ad82beffb2b3e59f20bc61fa8e74eda21}\label{classs21_1_1_calc_model_ad82beffb2b3e59f20bc61fa8e74eda21}} 
+\index{s21::CalcModel@{s21::CalcModel}!operator=@{operator=}}
+\index{operator=@{operator=}!s21::CalcModel@{s21::CalcModel}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classs21_1_1_calc_model}{Calc\+Model}} \& s21\+::\+Calc\+Model\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classs21_1_1_calc_model}{Calc\+Model}} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
 
 
 

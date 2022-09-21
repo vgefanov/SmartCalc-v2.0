@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['from_5fbutton_5foperations_0',['from_button_operations',['../classs21_1_1_view.html#ab6abc85272f65eff015f233e45731b20',1,'s21::View']]],
-  ['from_5fbutton_5foperations_5funary_1',['from_button_operations_unary',['../classs21_1_1_view.html#ad17e8f5fdb3a6f07c47797551433b484',1,'s21::View']]],
-  ['functionaction_2',['FunctionAction',['../classs21_1_1_p_n_model.html#aba842360c417174f3889e0409799fa17',1,'s21::PNModel']]],
-  ['functionoperations_3',['FunctionOperations',['../classs21_1_1_p_n_model.html#a537f49f7744587d1f7f5b3c636662572',1,'s21::PNModel']]]
+  ['editbuttonclicked_0',['editButtonClicked',['../classs21_1_1_view.html#a2d739a45fa307be30290c88bfe02d53d',1,'s21::View']]],
+  ['events_1',['events',['../classs21_1_1_view.html#aa5d40bc479eb2e754023c85002b32fa8',1,'s21::View']]],
+  ['expresion_2',['expresion',['../classs21_1_1_p_n_model.html#a453a585284bbe59bfa7b1aaa803308d5',1,'s21::PNModel']]]
 ];

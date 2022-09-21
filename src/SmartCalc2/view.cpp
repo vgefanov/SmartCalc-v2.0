@@ -1,7 +1,5 @@
 #include "view.h"
 
-#include <QRegularExpression>
-
 #include "ui_view.h"
 
 namespace s21 {
@@ -116,20 +114,13 @@ int View::countBrackets(QString label) {
 
 void View::checkLBrackets() {
   QString new_label = ui->lineEdit->text();
-  check_and_set_text(new_label, "\\D", true);
+  check_and_set_text(new_label, "(\\(|\\*|\\+|\\-|\\/|\\^)$", true);
 }
 
 void View::checkRBrackets() {
   QString new_label = ui->lineEdit->text();
   if (countBrackets(new_label) > 0) {
     check_and_set_text(new_label, "(\\)|\\d|x)$", false);
-  }
-}
-
-void View::checkDigit() {
-  QString new_label = ui->lineEdit->text();
-  if (!match(new_label, "[^\\d|\\.]0$").hasMatch()) {
-    check_and_set_text(new_label, "(\\(| |\\d|\\.|x|\\+|-|\\/|\\^)$", true);
   }
 }
 
@@ -142,7 +133,7 @@ void View::checkFuncs() {
 
 void View::from_button_operations_unary() {
   QString new_label = ui->lineEdit->text();
-  check_and_set_text(new_label, "(\\(| |\\)|\\d|x)$", true);
+  check_and_set_text(new_label, "(\\(|\\)|\\d|x)$", true);
 }
 
 void View::from_button_operations() {
@@ -240,7 +231,7 @@ void View::drawButtonClicked() {
   DrawNet(x_max, y_max);
   std::string str = ui->lineEdit->displayText().toStdString();
   std::vector<std::pair<double, double>> coord =
-      controller->getCoordinates(str, x_max);
+      controller->GetCoordinates(str, x_max);
   for (int i = 1; i < 10000; i++) {
     double x_prev, y_prev, x_curr, y_curr;
     x_prev = coord[i - 1].first * scene->width() / x_max + scene->width() / 2;

@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['test_0',['TEST',['../test_8cpp.html#a98869b9892b452fd734886eddaca0368',1,'test.cpp']]],
-  ['translateexpressions_1',['TranslateExpressions',['../classs21_1_1_p_n_model.html#a075d66092ad8d7f5c5e8c283a3998d96',1,'s21::PNModel']]]
+  ['qcleanupresources_5fresource_0',['qCleanupResources_resource',['../qrc__resource_8cpp.html#a23eced4ec277232a327b3f2b1f33ee33',1,'qrc_resource.cpp']]],
+  ['qinitresources_5fresource_1',['qInitResources_resource',['../qrc__resource_8cpp.html#a8446436b6639579331efaa56107d2fad',1,'qrc_resource.cpp']]],
+  ['qregisterresourcedata_2',['qRegisterResourceData',['../qrc__resource_8cpp.html#a2ce5a6cde5b318dc75442940471e05f7',1,'qrc_resource.cpp']]],
+  ['qunregisterresourcedata_3',['qUnregisterResourceData',['../qrc__resource_8cpp.html#a54b96c9f44d004fc0ea13bb581f97a71',1,'qrc_resource.cpp']]]
 ];
